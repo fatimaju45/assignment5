@@ -32,7 +32,7 @@
             <div class="navbar-end">
             <div class="flex gap-1 text-[#111111B3] text-xl">
               <img src="assets/coin.png" alt="">
-              <p class="font-semibold">98600</p>
+              <p id="my-balance" class="font-semibold">98600</p>
               <p class="font-semibold">BDT</p>
             </div>
             </div>
@@ -41,12 +41,12 @@
     </header>
     <main>
       <div class="flex justify-center gap-2">
-      <button class="btn text-xl font-semibold">Donation</button>
-      <button class="btn text-xl font-semibold">History</button>
+      <button id="active-donate-btn" class="text-2xl rounded-lg p-3 bg-[#11111116] font-semibold">Donation</button>
+      <button id="active-history-btn" class="text-2xl rounded-lg p-3 bg-[#11111116] font-semibold">History</button>
       </div>
       <!-- cards -->
-      <div class="">
-        <!-- donation card-1 div -->
+      <div id="page1" class="">
+        <!-- donation card-1 -->
       <div class="flex justify-center items-center gap-5 w-8/12 mt-7 mx-auto border border-solid rounded-3xl p-4">
         <div class="w-2/4">
           <img class="w-" src="assets/noakhali.png" alt="">
@@ -55,7 +55,7 @@
         <div class="w-3/4 p-2">
           <div class="flex gap-1 rounded-lg p-2 w-4/12 text-[#111111B3] mb-3 text-xl bg-[#1111110D]">
             <img src="assets/coin.png" alt="">
-            <p class="font-semibold">98600</p>
+            <p id="n-amount" class="font-semibold">600</p>
             <p class="font-semibold">BDT</p>
           </div>
           <h3 class="text-2xl font-bold mb-2">Donate for Flood at Noakhali, Bangladesh</h3>
@@ -63,29 +63,29 @@
           <!-- donation button -->
           <div class="grid gap-2">
             <input id="donation-amount" class="border border-solid rounded-lg p-2" type="text" placeholder="Write Donation Amount">
-            <button class="btn bg-[#B4F461] text-xl font-semibold">Donate Now</button>
+            <button id="donate-noakhali" class="btn bg-[#B4F461] text-xl font-semibold">Donate Now</button>
           </div>
         </div>
         
       </div>
-      <!-- donate card 2 -->
+      <!-- donate card 2 feni-->
       <div class="flex justify-center items-center gap-5 w-8/12 mt-7 mx-auto border border-solid rounded-3xl p-4">
         <div class="w-2/4">
-          <img class="w-" src="assets/feni.png" alt="">
+          <img class="w-fit" src="assets/feni.png" alt="">
         </div>
         <!-- text card div -->
         <div class="w-3/4 p-2">
           <div class="flex gap-1 rounded-lg p-2 w-4/12 text-[#111111B3] mb-3 text-xl bg-[#1111110D]">
             <img src="assets/coin.png" alt="">
-            <p class="font-semibold">98600</p>
+            <p id="f-amount" class="font-semibold">8000</p>
             <p class="font-semibold">BDT</p>
           </div>
           <h3 class="text-2xl font-bold mb-2">Donate for Flood Relief in Feni,Bangladesh</h3>
           <p class="text-left pr-8 mb-4 text-base text-[#11111176]"> The recent floods in Feni have devastated local communities, leading to severe disruption and loss. Your generous donation will help provide immediate aid, including food, clean water, and medical supplies, to those affected by this calamity. Together, we can offer crucial support and help rebuild lives in the aftermath of this disaster. Every contribution counts towards making a real difference. Please consider donating today to assist those in urgent need.</p>
           <!-- donation button -->
           <div class="grid gap-2">
-            <input id="donation-amount" class="border border-solid rounded-lg p-2" type="text" placeholder="Write Donation Amount">
-            <button class="btn bg-[#B4F461] text-xl font-semibold">Donate Now</button>
+            <input id="donation-amount-feni" class="border border-solid rounded-lg p-2" type="number" placeholder="Write Donation Amount">
+            <button id="donate-feni" class="btn bg-[#B4F461] text-xl font-semibold">Donate Now</button>
           </div>
         </div>
         
@@ -93,27 +93,29 @@
       <!-- donate card 3 -->
       <div class="flex justify-center items-center gap-5 w-8/12 mt-7 mx-auto border border-solid rounded-3xl p-4">
         <div class="w-2/4">
-          <img class="w-" src="assets/quota-protest.png" alt="">
+          <img class="w-fit" src="assets/quota-protest.png" alt="">
         </div>
         <!-- text card div -->
         <div class="w-3/4 p-2">
           <div class="flex gap-1 rounded-lg p-2 w-4/12 text-[#111111B3] mb-3 text-xl bg-[#1111110D]">
             <img src="assets/coin.png" alt="">
-            <p class="font-semibold">600</p>
+            <p id="q-amount" class="font-semibold">1000</p>
             <p class="font-semibold">BDT</p>
           </div>
           <h3 class="text-2xl font-bold mb-2">Aid for Injured in the Quota Movement</h3>
           <p class="text-left pr-8 mb-4 text-base text-[#11111176]"> The recent Quota movement has resulted in numerous injuries and significant hardship for many individuals. Your support is crucial in providing medical assistance, rehabilitation, and necessary supplies to those affected. By contributing, you help ensure that injured individuals receive the care and support they need during this challenging time. Every donation plays a vital role in alleviating their suffering and aiding in their recovery. Please consider making a donation to support these brave individuals in their time of need.</p>
           <!-- donation button -->
           <div class="grid gap-2">
-            <input id="donation-amount" class="border border-solid rounded-lg p-2" type="text" placeholder="Write Donation Amount">
-            <button class="btn bg-[#B4F461] text-xl font-semibold">Donate Now</button>
+            <input id="donation-amount-quota" class="border border-solid rounded-lg p-2" type="number" placeholder="Write Donation Amount">
+            <button id="donate-quota" class="btn bg-[#B4F461] text-xl font-semibold">Donate Now</button>
           </div>
         </div>
         
       </div>
       </div>
-      <div>
+      <div id="page2" class="text-black hidden">
+        <p>History</p>
+        <p>transaction</p>
 
       </div>
     
@@ -122,6 +124,8 @@
     <footer class="bg-[#F9F7F3] h-32 mt-7">
 
     </footer>
+    <script src="js/utilities.js"></script>
+    <script src="js/index.js"></script>
 
 
 </body>
