@@ -44,9 +44,11 @@ document.getElementById('donate-noakhali')
    )} GMT +0600 (Bangladesh Standard Time )
    </p>
    `
-document.getElementById('page2').appendChild(historyDiv)
+
+
+   document.getElementById('page2').appendChild(historyDiv)
 showModal('modal')
-// closeModal('close-btn')
+
 })
 
 // feni donation
@@ -93,6 +95,9 @@ document.getElementById('donate-feni')
    `
 document.getElementById('page2').appendChild(historyDivFeni)
 
+showModal('modal')
+
+
 })
 
 // quota donation
@@ -104,12 +109,11 @@ document.getElementById('donate-quota')
     const nCollection=getTextValueById('q-amount')
 
     // validation
-    if(amountNumber<=0 || amountNumber>balance|| document.getElementById('donation-amount').value===''  ){
+    if(amountNumber<=0 || amountNumber>balance || document.getElementById('donation-amount-quota').value==='' ){
         
         const signal= alert('Invalid amount')
         const string = document.getElementById('donation-amount-quota').value=''
-        return signal+string
-    }
+        return signal+string}
 
     const newBalance=balance-amountNumber
     const nTotalCollection=nCollection+amountNumber
@@ -138,6 +142,8 @@ document.getElementById('donate-quota')
    </p>
    `
 document.getElementById('page2').appendChild(historyDivQ)
+showModal('modal')
+
 })
 // clicking active btn
 document.getElementById('active-donate-btn').addEventListener('click', function(){
@@ -151,3 +157,4 @@ document.getElementById('active-history-btn').addEventListener('click', function
     showColor('active-history-btn')
     
 })
+
