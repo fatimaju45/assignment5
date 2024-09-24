@@ -46,6 +46,7 @@ document.getElementById('donate-noakhali')
    `
 document.getElementById('page2').appendChild(historyDiv)
 showModal('modal')
+// closeModal('close-btn')
 })
 
 // feni donation

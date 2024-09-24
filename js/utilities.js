@@ -28,7 +28,17 @@ function getInputValueById(id){
   function showModal(id){
     
     const modal= document.getElementById(id).classList.remove('hidden')
-    return modal
+    const addStyle= document.getElementById('whole-section').classList.add('bg-gray-200' )
+    return modal+addStyle
+    
   }
+
+  function closeModal(){
+    const modal= document.getElementById('modal')
+    const close= modal.classList.add('hidden')
+    const removeStyle= document.getElementById('whole-section').classList.remove('bg-gray-200' )
+    return close+removeStyle
+  }
+  
   
  

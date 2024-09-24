@@ -20,6 +20,7 @@
 </head>
 
 <body class="font">
+  <section id="whole-section" class="relative">
     <header class=" sticky top-0 z-50 ">
       <nav class="bg-[#fcf9f3ec] backdrop-filter backdrop-blur-sm bg-opacity-65  " >
         <div class="navbar w-11/12 mx-auto p-10  ">
@@ -72,22 +73,7 @@
             <button id="donate-noakhali" class="btn bg-[#B4F461] text-xl font-semibold">Donate Now</button>
           </div>
         </div>
-        <!-- Open the modal -->
-
-  <div id="modal" class="modal-box flex flex-col justify-center items-center absolute z-1000 bg-[#f5f8f1] hidden ">
-    <h3 class="text-2xl font-extrabold text-center mb-3">Congrats!</h3>
-    <div>
-      <img class="" src="assets/coin.png" alt="">
-    </div>
-    
-    <p class="py-4 text-center">You have donated for humankind</p>
-    <p class="text-base font-bold text-center text-yellow-500">Succesfully</p>
-    <div class="modal-action">
-     <button id="close-btn" class="btn bg-[#B4F461]">Close confirmation</button>
-
-    </div>
-  </div>
-</dialog>
+        
         
       </div>
       <!-- donate card 2 feni-->
@@ -147,6 +133,23 @@
     <footer id="footer" class="bg-[#F9F7F3] h-32 mt-7 ">
 
     </footer>
+  </section>
+    <!-- Open the modal -->
+
+  <div id="modal" class="modal-box flex flex-col justify-center items-center fixed top-64 left-96 bg-[#f5f8f1] hidden ">
+    <h3 class="text-2xl font-extrabold text-center mb-3">Congrats!</h3>
+    <div>
+      <img class="" src="assets/coin.png" alt="">
+    </div>
+    
+    <p class="py-4 text-center">You have donated for humankind</p>
+    <p class="text-base font-bold text-center text-yellow-500">Succesfully</p>
+    <div class="modal-action">
+     <button id="close-btn" onclick="closeModal()" class="btn bg-[#B4F461]">Close confirmation</button>
+
+    </div>
+  </div>
+</dialog>
     <script src="js/utilities.js"></script>
     <script src="js/index.js"></script>
 
