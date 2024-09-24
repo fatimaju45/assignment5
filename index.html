@@ -20,8 +20,9 @@
 </head>
 
 <body class="font">
-    <header class="bg-[#F9F7F3]">
-        <div class="navbar w-11/12 mx-auto p-10 mb-40 ">
+    <header class=" sticky top-0 z-50 ">
+      <nav class="bg-[#fcf9f3ec] backdrop-filter backdrop-blur-sm bg-opacity-65  " >
+        <div class="navbar w-11/12 mx-auto p-10  ">
             <div class="navbar-start">
               <button class="btn bg-[#B4F461] text-xl font-semibold">Blog</button>
             </div>
@@ -32,18 +33,23 @@
             <div class="navbar-end">
             <div class="flex gap-1 text-[#111111B3] text-xl">
               <img src="assets/coin.png" alt="">
-              <p id="my-balance" class="font-semibold">98600</p>
+              <p id="my-balance" class="font-semibold">18600</p>
               <p class="font-semibold">BDT</p>
             </div>
             </div>
           </div>
+      </nav>
+          <!-- buttons -->
+          <div class=" backdrop-filter backdrop-blur-sm p-10 flex justify-center gap-2">
+            <button id="active-donate-btn" class="text-2xl rounded-lg p-3 bg-[#B4F461] font-semibold">Donation</button>
+            <button id="active-history-btn" class="text-2xl rounded-lg p-3 bg-[#11111116] font-semibold">History</button>
+            </div>
+          
     
     </header>
     <main>
-      <div class="flex justify-center gap-2">
-      <button id="active-donate-btn" class="text-2xl rounded-lg p-3 bg-[#11111116] font-semibold">Donation</button>
-      <button id="active-history-btn" class="text-2xl rounded-lg p-3 bg-[#11111116] font-semibold">History</button>
-      </div>
+      
+      
       <!-- cards -->
       <div id="page1" class="">
         <!-- donation card-1 -->
@@ -62,10 +68,26 @@
           <p class="text-left pr-8 mb-4 text-base text-[#11111176]"> The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.</p>
           <!-- donation button -->
           <div class="grid gap-2">
-            <input id="donation-amount" class="border border-solid rounded-lg p-2" type="text" placeholder="Write Donation Amount">
+            <input id="donation-amount" class="border border-solid rounded-lg p-2" type="number" placeholder="Write Donation Amount">
             <button id="donate-noakhali" class="btn bg-[#B4F461] text-xl font-semibold">Donate Now</button>
           </div>
         </div>
+        <!-- Open the modal -->
+
+  <div id="modal" class="modal-box flex flex-col justify-center items-center absolute z-1000 bg-[#f5f8f1] hidden ">
+    <h3 class="text-2xl font-extrabold text-center mb-3">Congrats!</h3>
+    <div>
+      <img class="" src="assets/coin.png" alt="">
+    </div>
+    
+    <p class="py-4 text-center">You have donated for humankind</p>
+    <p class="text-base font-bold text-center text-yellow-500">Succesfully</p>
+    <div class="modal-action">
+     <button id="close-btn" class="btn bg-[#B4F461]">Close confirmation</button>
+
+    </div>
+  </div>
+</dialog>
         
       </div>
       <!-- donate card 2 feni-->
@@ -113,15 +135,16 @@
         
       </div>
       </div>
+      
+      <!-- history section -->
       <div id="page2" class="text-black hidden">
-        <p>History</p>
-        <p>transaction</p>
+        
 
       </div>
     
       
     </main>
-    <footer class="bg-[#F9F7F3] h-32 mt-7">
+    <footer id="footer" class="bg-[#F9F7F3] h-32 mt-7 ">
 
     </footer>
     <script src="js/utilities.js"></script>

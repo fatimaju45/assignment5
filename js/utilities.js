@@ -25,5 +25,10 @@ function getInputValueById(id){
  }
 
  
-   
+  function showModal(id){
+    
+    const modal= document.getElementById(id).classList.remove('hidden')
+    return modal
+  }
+  
  
