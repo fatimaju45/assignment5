@@ -23,15 +23,15 @@
   <section id="whole-section" class="relative">
     <header class=" sticky top-0 z-50 ">
       <nav class="bg-[#fcf9f3ec] backdrop-filter backdrop-blur-sm bg-opacity-65  " >
-        <div class="navbar w-11/12 mx-auto p-10  ">
-            <div class="navbar-start">
+        <div class="navbar flex flex-col lg:flex-row justify-evenly items-center  lg:w-11/12 mx-auto p-2 ">
+            <div class="lg:navbar-start">
               <button onclick="window.location.href=`/blog.html`" class="btn bg-[#B4F461] text-xl font-semibold">Blog</button>
             </div>
             <div class="navbar-center">
-              <img src="assets/logo.png" alt="">
-              <a class="btn btn-ghost text-3xl">Donate Bangladesh</a>
+              <img class="" src="assets/logo.png" alt="">
+              <a class="font-semibold lg:text-3xl text-lg">Donate Bangladesh</a>
             </div>
-            <div class="navbar-end">
+            <div class="lg:navbar-end ">
             <div class="flex gap-1 text-[#111111B3] text-xl">
               <img src="assets/coin.png" alt="">
               <p id="my-balance" class="font-semibold">18600</p>
@@ -41,7 +41,7 @@
           </div>
       </nav>
           <!-- buttons -->
-          <div class=" backdrop-filter backdrop-blur-sm p-10 flex justify-center gap-2">
+          <div class=" w-8/12 mx-auto backdrop-filter backdrop-blur-sm p-10 flex flex-col lg:flex-row justify-center gap-2">
             <button id="active-donate-btn" class="text-2xl rounded-lg p-3 bg-[#B4F461] font-semibold">Donation</button>
             <button id="active-history-btn" class="text-2xl rounded-lg p-3 bg-[#11111116] font-semibold">History</button>
             </div>
@@ -54,13 +54,13 @@
       <!-- cards -->
       <div id="page1" class="">
         <!-- donation card-1 -->
-      <div class="flex justify-center items-center gap-5 w-8/12 mt-7 mx-auto border border-solid rounded-3xl p-4">
-        <div class="w-2/4">
+      <div class="flex flex-col lg:flex-row justify-center items-center gap-5 lg:w-8/12 mt-7 mx-auto border border-solid rounded-3xl p-4">
+        <div class="lg:w-2/4">
           <img class="w-" src="assets/noakhali.png" alt="">
         </div>
         <!-- text card div -->
-        <div class="w-3/4 p-2">
-          <div class="flex gap-1 rounded-lg p-2 w-4/12 text-[#111111B3] mb-3 text-xl bg-[#1111110D]">
+        <div class="lg:w-3/4 mx-auto p-2 text-center lg:text-left">
+          <div class="flex justify-center items-center gap-1 rounded-lg p-2 w-4/12 mx-auto lg:mx-0 text-[#111111B3] mb-3 text-xl bg-[#1111110D]">
             <img src="assets/coin.png" alt="">
             <p id="n-amount" class="font-semibold">600</p>
             <p class="font-semibold">BDT</p>
@@ -77,13 +77,13 @@
         
       </div>
       <!-- donate card 2 feni-->
-      <div class="flex justify-center items-center gap-5 w-8/12 mt-7 mx-auto border border-solid rounded-3xl p-4">
-        <div class="w-2/4">
+      <div class="flex flex-col lg:flex-row justify-center items-center gap-5 lg:w-8/12 mt-7 mx-auto border border-solid rounded-3xl p-4">
+        <div class="lg:w-2/4">
           <img class="w-fit" src="assets/feni.png" alt="">
         </div>
         <!-- text card div -->
-        <div class="w-3/4 p-2">
-          <div class="flex gap-1 rounded-lg p-2 w-4/12 text-[#111111B3] mb-3 text-xl bg-[#1111110D]">
+        <div class="lg:w-3/4 mx-auto p-2 text-center lg:text-left">
+          <div class="flex justify-center items-center gap-1 rounded-lg p-2 w-4/12 mx-auto lg:mx-0 text-[#111111B3] mb-3 text-xl bg-[#1111110D]">
             <img src="assets/coin.png" alt="">
             <p id="f-amount" class="font-semibold">8000</p>
             <p class="font-semibold">BDT</p>
@@ -99,13 +99,13 @@
         
       </div>
       <!-- donate card 3 -->
-      <div class="flex justify-center items-center gap-5 w-8/12 mt-7 mx-auto border border-solid rounded-3xl p-4">
-        <div class="w-2/4">
+      <div class="flex flex-col lg:flex-row justify-center items-center gap-5 lg:w-8/12 mt-7 mx-auto border border-solid rounded-3xl p-4">
+        <div class="lg:w-2/4">
           <img class="w-fit" src="assets/quota-protest.png" alt="">
         </div>
         <!-- text card div -->
-        <div class="w-3/4 p-2">
-          <div class="flex gap-1 rounded-lg p-2 w-4/12 text-[#111111B3] mb-3 text-xl bg-[#1111110D]">
+        <div class="lg:w-3/4 mx-auto p-2 text-center lg:text-left">
+          <div class="flex justify-center items-center gap-1 rounded-lg p-2 w-4/12 mx-auto lg:mx-0 text-[#111111B3] mb-3 text-xl bg-[#1111110D]">
             <img src="assets/coin.png" alt="">
             <p id="q-amount" class="font-semibold">1000</p>
             <p class="font-semibold">BDT</p>

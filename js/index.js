@@ -26,7 +26,7 @@ document.getElementById('donate-noakhali')
 
     // transaction history
     const historyDiv=document.createElement('div')
-   historyDiv.classList.add( 'mx-auto','w-6/12','mb-4','mt-4', 'border','border-solid','rounded-2xl' ,'p-3', 'bg-white')
+   historyDiv.classList.add( 'mx-auto','lg:w-6/12','mb-4','mt-4', 'border','border-solid','rounded-2xl' ,'p-3', 'bg-white')
    historyDiv.innerHTML=`
    <h3 class="text-xl mb-3 font-bold text-black"> ${amountNumber} Taka is Donated for famine-2024 at Noakhali,Bangladesh</h3>
    <p class=" mb-3 text-base text-[#1111114b]">Date: ${new Date().toLocaleDateString(
